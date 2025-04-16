@@ -16,6 +16,7 @@
             <td><%= article.description %></td>
             <td><%= article.created_at.strftime("%B %d, %Y") %></td>
             <td><%= link_to 'Show', article_path(article) %></td>
+            <td><%= button_to 'Delete', article_path(article), method: :delete %></td>
         </tr>
         <% end %>
     </tbody>
